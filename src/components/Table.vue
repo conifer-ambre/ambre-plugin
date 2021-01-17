@@ -1,16 +1,29 @@
 <template>
-  <div>
-    <div>
-      <el-button>ambre-table</el-button>
-    </div>
+  <div class="ambretable">
+      <div @click="handleChange">ambretable {{ list }} {{ number }}</div>
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
-
-@Options({
+import { defineComponent, reactive, toRefs } from 'vue'
+export default defineComponent({
+  props: {
+    list: {
+      type: Array,
+      default: () => []
+    }
+  },
+  emits: ['change'],
+  setup (props, context) {
+    const data = reactive({
+      object: {},
+      handleChange () {
+        context.emit('change', 'handle change')
+      }
+    })
+    return {
+      ...toRefs(data)
+    }
+  }
 })
-export default class Table extends Vue {
-}
 </script>

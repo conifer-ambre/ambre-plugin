@@ -1,3 +1,4 @@
+import '@/styles/style.scss'
 export default {
   install: (app) => {
     const array = require.context('@/components', false, /.vue$/)

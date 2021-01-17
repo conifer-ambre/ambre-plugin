@@ -2,14 +2,25 @@
   <div>
     <h1>components</h1>
     <h3>ambre-table:</h3>
-    <ambre-table></ambre-table>
+    <ambre-table :list="[1,2,3]" @change="handleChange"></ambre-table>
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { Vue } from 'vue-class-component'
+export default class Index extends Vue {
+  private list = []
 
-@Options({
-})
-export default class Index extends Vue {}
+  mounted () {
+    this.handleInit()
+  }
+
+  handleInit () {
+    console.log('environment ready')
+  }
+
+  handleChange (value) {
+    console.log(value)
+  }
+}
 </script>
