@@ -1,5 +1,5 @@
 <template>
-  <div class="ambretable">
+  <div class="ambrebutton">
     <div @click="handleChange">ambretable {{ list }} {{ number }}</div>
   </div>
 </template>

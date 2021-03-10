@@ -1,442 +1,495 @@
-.p{
-    &l{
-        &-5{
-            padding-left:5px;
-        }
-        &-10{
-            padding-left:10px;
-        }
-        &-15{
-            padding-left:15px;
-        }
-        &-20{
-            padding-left:20px;
-        }
-        &-25{
-            padding-left:25px;
-        }
-        &-30{
-            padding-left:30px;
-        }
-        &-35{
-            padding-left:35px;
-        }
-        &-40{
-            padding-left:40px;
-        }
-        &-45{
-            padding-left:45px;
-        }
-        &-50{
-            padding-left:50px;
-        }
-        &-55{
-            padding-left:55px;
-        }
-        &-60{
-            padding-left:60px;
-        }
-        &-65{
-            padding-left:65px;
-        }
-        &-70{
-            padding-left:70px;
-        }
-    }
-    &r{
-        &-5{
-            padding-right:5px;
-        }
-        &-10{
-            padding-right:10px;
-        }
-        &-15{
-            padding-right:15px;
-        }
-        &-20{
-            padding-right:20px;
-        }
-        &-25{
-            padding-right:25px;
-        }
-        &-30{
-            padding-right:30px;
-        }
-        &-40{
-            padding-right:40px;
-        }
-    }
-    &t{
-        &-5{
-            padding-top:5px;
-        }
-        &-10{
-            padding-top:10px;
-        }
-        &-15{
-            padding-top:15px;
-        }
-        &-20{
-            padding-top:20px;
-        }
-        &-25{
-            padding-top:25px;
-        }
-        &-30{
-            padding-top:30px;
-        }
-        &-35{
-            padding-top:35px;
-        }
-        &-40{
-            padding-top:40px;
-        }
-        &-45{
-            padding-top:45px;
-        }
-        &-50{
-            padding-top:50px;
-        }
-    }
-    &b{
-        &-5{
-            padding-bottom:5px;
-        }
-        &-10{
-            padding-bottom:10px;
-        }
-        &-15{
-            padding-bottom:15px;
-        }
-        &-20{
-            padding-bottom:20px;
-        }
-        &-25{
-            padding-bottom:25px;
-        }
-        &-30{
-            padding-bottom:30px;
-        }
-        &-35{
-            padding-bottom:35px;
-        }
-        &-40{
-            padding-bottom:40px;
-        }
-        &-45{
-            padding-bottom:45px;
-        }
-        &-50{
-            padding-bottom:50px;
-        }
-        &-55{
-            padding-bottom:55px;
-        }
-    }
-    
+* {
+  margin: 0;
+  font-family: 'PingFang SC';
 }
-.m{
-    &l{
-        &-5{
-            margin-left:5px;
-        }
-        &-10{
-            margin-left:10px;
-        }
-        &-15{
-            margin-left:15px;
-        }
-        &-20{
-            margin-left:20px;
-        }
-        &-25{
-            margin-left:25px;
-        }
-        &-30{
-            margin-left:30px;
-        }
+.padding {
+  &-left {
+    &-5 {
+      padding-left: 5px;
     }
-    &r{
-        &-5{
-            margin-right:5px;
-        }
-        &-10{
-            margin-right:10px;
-        }
-        &-15{
-            margin-right:15px;
-        }
-        &-20{
-            margin-right:20px;
-        }
-        &-25{
-            margin-right:25px;
-        }
-        &-30{
-            margin-right:30px;
-        }
+    &-10 {
+      padding-left: 10px;
     }
-    &t{
-        &-5{
-            margin-top:5px;
-        }
-        &-10{
-            margin-top:10px;
-        }
-        &-15{
-            margin-top:15px;
-        }
-        &-20{
-            margin-top:20px;
-        }
-        &-25{
-            margin-top:25px;
-        }
-        &-30{
-            margin-top:30px;
-        }
+    &-15 {
+      padding-left: 15px;
     }
-    &b{
-        &-10{
-            margin-bottom:10px;
-        }
-        &-15{
-            margin-bottom:15px;
-        }
-        &-20{
-            margin-bottom:20px;
-        }
-        &-25{
-            margin-bottom:25px;
-        }
-        &-30{
-            margin-bottom:30px;
-        }
-        &-35{
-            margin-bottom:35px;
-        }
-        &-40{
-            margin-bottom:40px;
-        }
-        &-45{
-            margin-bottom:45px;
-        }
-        &-50{
-            margin-bottom:50px;
-        }
+    &-20 {
+      padding-left: 20px;
     }
-    
+    &-25 {
+      padding-left: 25px;
+    }
+    &-30 {
+      padding-left: 30px;
+    }
+    &-35 {
+      padding-left: 35px;
+    }
+    &-40 {
+      padding-left: 40px;
+    }
+    &-45 {
+      padding-left: 45px;
+    }
+    &-50 {
+      padding-left: 50px;
+    }
+    &-55 {
+      padding-left: 55px;
+    }
+    &-60 {
+      padding-left: 60px;
+    }
+    &-65 {
+      padding-left: 65px;
+    }
+    &-70 {
+      padding-left: 70px;
+    }
+    &-75 {
+      padding-left: 75px;
+    }
+    &-80 {
+      padding-left: 80px;
+    }
+    &-85 {
+      padding-left: 85px;
+    }
+    &-90 {
+      padding-left: 90px;
+    }
+    &-95 {
+      padding-left: 95px;
+    }
+    &-100 {
+      padding-left: 100px;
+    }
+  }
+  &-right {
+    &-5 {
+      padding-right: 5px;
+    }
+    &-10 {
+      padding-right: 10px;
+    }
+    &-15 {
+      padding-right: 15px;
+    }
+    &-20 {
+      padding-right: 20px;
+    }
+    &-25 {
+      padding-right: 25px;
+    }
+    &-30 {
+      padding-right: 30px;
+    }
+    &-35 {
+      padding-right: 35px;
+    }
+    &-40 {
+      padding-right: 40px;
+    }
+    &-45 {
+      padding-right: 45px;
+    }
+    &-50 {
+      padding-right: 50px;
+    }
+  }
+  &t {
+    &-5 {
+      padding-top: 5px;
+    }
+    &-10 {
+      padding-top: 10px;
+    }
+    &-15 {
+      padding-top: 15px;
+    }
+    &-20 {
+      padding-top: 20px;
+    }
+    &-25 {
+      padding-top: 25px;
+    }
+    &-30 {
+      padding-top: 30px;
+    }
+    &-35 {
+      padding-top: 35px;
+    }
+    &-40 {
+      padding-top: 40px;
+    }
+    &-45 {
+      padding-top: 45px;
+    }
+    &-50 {
+      padding-top: 50px;
+    }
+  }
+  &b {
+    &-5 {
+      padding-bottom: 5px;
+    }
+    &-10 {
+      padding-bottom: 10px;
+    }
+    &-15 {
+      padding-bottom: 15px;
+    }
+    &-20 {
+      padding-bottom: 20px;
+    }
+    &-25 {
+      padding-bottom: 25px;
+    }
+    &-30 {
+      padding-bottom: 30px;
+    }
+    &-35 {
+      padding-bottom: 35px;
+    }
+    &-40 {
+      padding-bottom: 40px;
+    }
+    &-45 {
+      padding-bottom: 45px;
+    }
+    &-50 {
+      padding-bottom: 50px;
+    }
+    &-55 {
+      padding-bottom: 55px;
+    }
+  }
 }
-.text{
-    &-center{
-        text-align: center;
+.m {
+  &l {
+    &-5 {
+      margin-left: 5px;
     }
-    &-right{
-        text-align: right;
+    &-10 {
+      margin-left: 10px;
     }
-    &-left{
-        text-align: left;
+    &-15 {
+      margin-left: 15px;
     }
-    &-12{
-        font-size: 12px;
+    &-20 {
+      margin-left: 20px;
     }
-    &-13{
-        font-size:13px;
+    &-25 {
+      margin-left: 25px;
     }
-    &-14{
-        font-size: 14px;
+    &-30 {
+      margin-left: 30px;
     }
-    &-15{
-        font-size:15px;
+  }
+  &r {
+    &-5 {
+      margin-right: 5px;
     }
-    &-16{
-        font-size: 16px;
+    &-10 {
+      margin-right: 10px;
     }
-    &-18{
-        font-size: 18px;
+    &-15 {
+      margin-right: 15px;
     }
-    &-24{
-        font-size:24px;
+    &-20 {
+      margin-right: 20px;
     }
-    &-25{
-        font-size:25px;
+    &-25 {
+      margin-right: 25px;
     }
-    &-28{
-        font-size: 28px;;
+    &-30 {
+      margin-right: 30px;
     }
-    &-32{
-        font-size:32px;
+  }
+  &t {
+    &-5 {
+      margin-top: 5px;
     }
-    &-40{
-        font-size: 40px;
+    &-10 {
+      margin-top: 10px;
     }
+    &-15 {
+      margin-top: 15px;
+    }
+    &-20 {
+      margin-top: 20px;
+    }
+    &-25 {
+      margin-top: 25px;
+    }
+    &-30 {
+      margin-top: 30px;
+    }
+  }
+  &b {
+    &-10 {
+      margin-bottom: 10px;
+    }
+    &-15 {
+      margin-bottom: 15px;
+    }
+    &-20 {
+      margin-bottom: 20px;
+    }
+    &-25 {
+      margin-bottom: 25px;
+    }
+    &-30 {
+      margin-bottom: 30px;
+    }
+    &-35 {
+      margin-bottom: 35px;
+    }
+    &-40 {
+      margin-bottom: 40px;
+    }
+    &-45 {
+      margin-bottom: 45px;
+    }
+    &-50 {
+      margin-bottom: 50px;
+    }
+  }
 }
-.color{
-    &-ffffff,&-white{
-        color:#fff;
-    }
-    &-7f7f7f{
-        color:#7f7f7f;
-    }
-    &-10afd1{
-        color:#10afd1;
-    }
-    &-141414{
-        color:#141414;
-    }
-    &-414141{
-        color:#414141;
-    }
-    &-576b95{
-        color:#576b95;
-    }
-    &-b5b5b5{
-        color:#b5b5b5;
-    }
-    &-6388E3{
-        color:#6388E3;
-    }
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-12 {
+    font-size: 12px;
+  }
+  &-14 {
+    font-size: 14px;
+  }
+  &-16 {
+    font-size: 16px;
+  }
+  &-18 {
+    font-size: 18px;
+  }
+  &-20 {
+    font-size: 20px;
+  }
+  &-22 {
+    font-size: 22px;
+  }
+  &-24 {
+    font-size: 24px;
+  }
+  &-26 {
+    font-size: 26px;
+  }
+  &-28 {
+    font-size: 28px;
+  }
+  &-30 {
+    font-size: 30px;
+  }
+  &-32 {
+    font-size: 32px;
+  }
+  &-34 {
+    font-size: 34px;
+  }
+  &-36 {
+    font-size: 36px;
+  }
+  &-38 {
+    font-size: 38px;
+  }
+  &-40 {
+    font-size: 40px;
+  }
 }
-.background{
-    &-color{
-        &-fbfbfb{
-            background-color: #fbfbfb;
-        }
-        &-f3f3f3{
-            background-color: #f3f3f3;
-        }
-        &-10afd1{
-            background-color: #10afd1;
-        }
-        &-f1f1f3{
-            background-color: #f1f1f3;
-        }
-        &-efefef{
-            background-color: #efefef;
-        }
-    }
-    
+.color {
+  &-ffffff {
+    color: #ffffff;
+  }
+  &-7f7f7f {
+    color: #7f7f7f;
+  }
+  &-10afd1 {
+    color: #10afd1;
+  }
+  &-141414 {
+    color: #141414;
+  }
+  &-414141 {
+    color: #414141;
+  }
+  &-576b95 {
+    color: #576b95;
+  }
+  &-b5b5b5 {
+    color: #b5b5b5;
+  }
+  &-6388E3 {
+    color: #6388e3;
+  }
 }
-.font{
-    &-weight{
-        &-normal{
-            font-weight: normal;
-        }
-        &-bold{
-            font-weight: bold;
-        }
+.background {
+  &-color {
+    &-fbfbfb {
+      background-color: #fbfbfb;
     }
+    &-f3f3f3 {
+      background-color: #f3f3f3;
+    }
+    &-10afd1 {
+      background-color: #10afd1;
+    }
+    &-f1f1f3 {
+      background-color: #f1f1f3;
+    }
+    &-efefef {
+      background-color: #efefef;
+    }
+  }
 }
-.vertical-align{
-    &-top {
-        vertical-align: top;
+.font {
+  &-weight {
+    &-normal {
+      font-weight: normal;
     }
-    &-middle{
-        vertical-align: middle;
+    &-bold {
+      font-weight: bold;
     }
-    &-bottom {
-        vertical-align: bottom;
-    }
+  }
 }
-.overflow{
-    &-hidden{
-        overflow: hidden;
-    }
-    
+.vertical-align {
+  &-top {
+    vertical-align: top;
+  }
+  &-middle {
+    vertical-align: middle;
+  }
+  &-bottom {
+    vertical-align: bottom;
+  }
 }
-.position{
-    &-relative{
-        position: relative;
-    }
+.overflow {
+  &-hidden {
+    overflow: hidden;
+  }
 }
-.flex{
-    display: flex;
-    &-warp{
-        @extend .flex;
-        flex-wrap: wrap;
-    }
-    &-column{
-        @extend .flex;
-        flex-direction: column;
-    }
-    &-ju-start{
-        @extend .flex;
-        justify-content: flex-start;
-    }
-    &-ju-end{
-        @extend .flex;
-        justify-content: flex-end;
-    }
-    &-ju-center{
-        @extend .flex;
-        justify-content: center;
-    }
-    &-ju-between{
-        @extend .flex;
-        justify-content: space-between;
-    }
-    &-al-initial{
-        @extend .flex;
-        align-items: initial;
-    }
-    &-al-center{
-        @extend .flex;
-        align-items: center;
-    }
-    &-ju-al-start{
-        @extend .flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    &-ju-al-end{
-        @extend .flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    &-ju-al-center{
-        @extend .flex;
-        justify-content: center;
-        align-items: center;
-    }
-    &-ju-al-between{
-        @extend .flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &-ju-al-around{
-        @extend .flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    &-auto{
-        @extend .flex;
-        flex:auto;
-    }
-    &-1{
-        flex:1;
-    }
+.position {
+  &-relative {
+    position: relative;
+  }
 }
-.cursor{
-    &-pointer{
-        cursor: pointer;
-    }
+.flex {
+  display: flex;
+  &-warp {
+    @extend .flex;
+    flex-wrap: wrap;
+  }
+  &-column {
+    @extend .flex;
+    flex-direction: column;
+  }
+  &-ju-start {
+    @extend .flex;
+    justify-content: flex-start;
+  }
+  &-ju-end {
+    @extend .flex;
+    justify-content: flex-end;
+  }
+  &-ju-center {
+    @extend .flex;
+    justify-content: center;
+  }
+  &-ju-between {
+    @extend .flex;
+    justify-content: space-between;
+  }
+  &-al-initial {
+    @extend .flex;
+    align-items: initial;
+  }
+  &-al-center {
+    @extend .flex;
+    align-items: center;
+  }
+  &-ju-al-start {
+    @extend .flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &-ju-al-end {
+    @extend .flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &-ju-al-center {
+    @extend .flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-ju-al-between {
+    @extend .flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-ju-al-around {
+    @extend .flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &-auto {
+    @extend .flex;
+    flex: auto;
+  }
+  &-1 {
+    flex: 1;
+  }
 }
-.float{
-    &-left{
-        float: left;
-    }
-    &-right{
-        float: right;
-    }
+.cursor {
+  &-pointer {
+    cursor: pointer;
+  }
 }
-.display{
-    &-block{
-        display: block;
+.white {
+  &-space {
+    &-nowrap {
+      white-space: nowrap;
     }
+  }
 }
-.line-through{
-    text-decoration-line:line-through;
+.float {
+  &-left {
+    float: left;
+  }
+  &-right {
+    float: right;
+  }
 }
-.underline{
-    text-decoration:underline;
+.display {
+  &-block {
+    display: block;
+  }
+}
+.line-through {
+  text-decoration-line: line-through;
+}
+.underline {
+  text-decoration: underline;
+}
+.text-overflow-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
 }

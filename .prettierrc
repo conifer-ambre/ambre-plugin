@@ -1,0 +1,8 @@
+{
+  "requireConfig": false,
+  "singleQuote": true,
+  "packageManager": "yarn",
+  "printWidth": 100,
+  "semi": false,
+  "trailingComma": "none"
+}
