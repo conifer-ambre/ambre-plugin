@@ -1,4 +1,61 @@
-.ambre-button{
-  border: 1px solid #999999;
-  padding:10px;
+.ambre-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  user-select: none;
+  border: 1px solid $--border-default;
+  // default
+  &-default {
+    background: $--button-default;
+    &:hover {
+      background: $--button-default-activated;
+    }
+  }
+  // primary
+  &-primary {
+    color: #ffffff;
+    background: $--button-primary;
+    &:hover {
+      background: $--button-primary-activated;
+    }
+    &:active {
+      background: $--button-primary-activated;
+      filter:brightness(.6)
+    }
+  }
+  // success
+  &-success {
+    color: #ffffff;
+    background: $--button-success;
+    &:hover {
+      background: $--button-success-activated;
+    }
+  }
+  // warning
+  &-warning {
+    color: #ffffff;
+    background: $--button-warning;
+    &:hover {
+      background: $--button-warning-activated;
+    }
+  }
+  // serious
+  &-serious {
+    color: #ffffff;
+    background: $--button-serious;
+    &:hover {
+      background: $--button-serious-activated;
+    }
+  }
+  // disabled
+  &-disabled {
+    filter: grayscale(0.6) brightness(1.1);
+    cursor: not-allowed;
+  }
+  // hover
+  &-hover {
+    &:hover {
+      transition: 0.5s all;
+    }
+  }
 }

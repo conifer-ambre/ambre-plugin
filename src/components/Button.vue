@@ -1,14 +1,27 @@
 <template>
-  <div class="ambre-button" @click="handleChange">Button</div>
+  <div
+    :class="
+      `ambre-button ambre-button-hover ambre-button-${type} ${
+        disabled ? 'ambre-button-disabled' : ''
+      }`
+    "
+    @click="handleChange"
+  >
+    <slot></slot>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive, toRefs } from 'vue'
 export default defineComponent({
   props: {
-    list: {
-      type: Array,
-      default: () => []
+    type: {
+      type: String,
+      default: 'default'
+    },
+    disabled: {
+      type: Boolean,
+      default: false
     }
   },
   emits: ['change'],

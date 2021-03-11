@@ -9,7 +9,7 @@
     "ambre-plugin-build": "yarn ambre-plugin-build-components && yarn ambre-plugin-build-styles",
     "ambre-plugin-publish": "cd ./src/package && yarn publish",
     "ambre-plugin-build-components": "vue-cli-service build --target lib ./src/components/index.ts --dest ./src/package/dist/components",
-    "ambre-plugin-build-styles": "vue-cli-service build --target lib ./src/styles/atom.scss --dest ./src/package/dist/atom && vue-cli-service build --target lib ./src/styles/index.scss --dest ./src/package/dist/styles"
+    "ambre-plugin-build-styles": "vue-cli-service build --target lib ./src/styles/atom.scss --dest ./src/package/dist/styles/atom && vue-cli-service build --target lib ./src/styles/components.scss --dest ./src/package/dist/styles/components"
   },
   "dependencies": {
     "axios": "^0.21.1",
