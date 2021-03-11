@@ -6,9 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "ambre-plugin-build": "yarn ambre-plugin-build-components && yarn ambre-plugin-build-styles",
+    "ambre-plugin-publish": "cd ./src/package && yarn publish",
     "ambre-plugin-build-components": "vue-cli-service build --target lib ./src/components/index.ts --dest ./src/package/dist/components",
-    "ambre-plugin-build-styles": "vue-cli-service build --target lib ./src/styles/index.scss --dest ./src/package/dist/styles",
-    "ambre-plugin-publish": "cd ./src/package && yarn publish"
+    "ambre-plugin-build-styles": "vue-cli-service build --target lib ./src/styles/atom.scss --dest ./src/package/dist/atom && vue-cli-service build --target lib ./src/styles/index.scss --dest ./src/package/dist/styles"
   },
   "dependencies": {
     "axios": "^0.21.1",
