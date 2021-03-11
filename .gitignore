@@ -1,24 +1,84 @@
-.DS_Store
-node_modules
+# build
 /dist
 /src/package/dist
 
+# test
+/tests/e2e/videos/
+/tests/e2e/screenshots/
 
-# local env files
+# local env
 .env.local
 .env.*.local
 
-# Log files
+# log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor directories and files
+# lock
+yarn.lock
+package-lock.json
+
+# editor
 .idea
 .vscode
+.classpath
+.project
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.sw? 
+
+# osx
+.DS_Store
+
+# xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# android
+.idea/
+.idea
+.gradle
+*.iml
+local.properties
+index.android.bundle
+index.android.bundle.meta
+
+# node.js
+node_modules/
+miniprogram_npm/
+npm-debug.log
+yarn-error.log
+
+# buck
+buck-out/
+\.buckd/
+*.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
