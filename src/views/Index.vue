@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>components</h1>
-    <h3>ambre-table:</h3>
+    <h3>button:</h3>
+    <ambre-button>button</ambre-button>
+    <h3>table:</h3>
     <ambre-table :list="[1,2,3]" @change="handleChange"></ambre-table>
   </div>
 </template>

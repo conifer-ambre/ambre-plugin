@@ -1,6 +1,6 @@
 <template>
   <div class="ambretable">
-      <div @click="handleChange">ambretable {{ list }} {{ number }}</div>
+      <div @click="handleChange">table {{ list }} {{ number }}</div>
   </div>
 </template>
 

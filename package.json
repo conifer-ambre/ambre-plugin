@@ -6,12 +6,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "ambre-plugin-build": "vue-cli-service build --target lib ./src/components/index.ts --dest ./src/package/dist",
+    "ambre-plugin-build-components": "vue-cli-service build --target lib ./src/components/index.ts --dest ./src/package/dist/components",
+    "ambre-plugin-build-styles": "vue-cli-service build --target lib ./src/styles/index.scss --dest ./src/package/dist/styles",
     "ambre-plugin-publish": "cd ./src/package && yarn publish"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "element-plus": "^1.0.1-beta.2",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.0-0"
