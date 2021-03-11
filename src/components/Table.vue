@@ -1,6 +1,6 @@
 <template>
   <div class="ambretable">
-      <div @click="handleChange">table {{ list }} {{ number }}</div>
+    <div @click="handleChange">ambretable {{ list }} {{ number }}</div>
   </div>
 </template>
 
@@ -14,10 +14,10 @@ export default defineComponent({
     }
   },
   emits: ['change'],
-  setup (props, context) {
+  setup(props, context) {
     const data = reactive({
       object: {},
-      handleChange () {
+      handleChange() {
         context.emit('change', 'handle change')
       }
     })
