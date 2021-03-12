@@ -6,10 +6,11 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "ambre-plugin-build": "yarn ambre-plugin-build-components && yarn ambre-plugin-build-styles",
     "ambre-plugin-publish": "cd ./src/package && yarn publish",
-    "ambre-plugin-build-components": "vue-cli-service build --target lib ./src/components/index.ts --dest ./src/package/dist/components",
-    "ambre-plugin-build-styles": "vue-cli-service build --target lib ./src/styles/atom.scss --dest ./src/package/dist/styles/atom && vue-cli-service build --target lib ./src/styles/components.scss --dest ./src/package/dist/styles/components"
+    "ambre-plugin-build": "yarn ambre-plugin-build-components && yarn ambre-plugin-build-styles && yarn ambre-plugin-build-utils",
+    "ambre-plugin-build-utils": "vue-cli-service build --target lib ./src/utils/index.ts --dest ./src/package/dist/utils",
+    "ambre-plugin-build-styles": "vue-cli-service build --target lib ./src/styles/atom.scss --dest ./src/package/dist/styles/atom && vue-cli-service build --target lib ./src/styles/components.scss --dest ./src/package/dist/styles/components",
+    "ambre-plugin-build-components": "vue-cli-service build --target lib ./src/components/index.ts --dest ./src/package/dist/components"
   },
   "dependencies": {
     "axios": "^0.21.1",
