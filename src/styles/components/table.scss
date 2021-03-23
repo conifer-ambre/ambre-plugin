@@ -1,0 +1,29 @@
+.ambre-table {
+  width: 100%;
+  border: 1px solid $--border-default;
+  padding: 5px;
+  border-spacing: 0;
+  &-header {
+    background: $--border-default;
+    &-item {
+      padding: 10px 5px;
+      box-sizing: border-box;
+      border-left: 1px solid #ffffff;
+      &:first-child{
+        border-left: none;
+      }
+    }
+  }
+  &-body {
+    &-item {
+      font-size: 14px;
+      padding: 5px;
+      border-left: 1px solid $--border-default;
+      border-bottom: 1px solid $--border-default;
+      box-sizing: border-box;
+      &:last-child{
+        border-right: 1px solid $--border-default;
+      }
+    }
+  }
+}

@@ -23,6 +23,12 @@
         <ambre-button type="warning" disabled>Button</ambre-button>
         <ambre-button type="serious" disabled>Button</ambre-button>
       </div>
+      <!-- ambre-button disabled -->
+      <h5>表格:</h5>
+      <h5>ambre-table:</h5>
+      <div class="index-component">
+        <ambre-table :data="ambre_table_data" :header="ambre_table_header" :handle="ambre_table_handle"></ambre-table>
+      </div>
     </div>
   </div>
 </template>
@@ -30,6 +36,102 @@
 <script lang="ts">
 import { Vue } from 'vue-class-component'
 export default class Index extends Vue {
-  private list = []
+  private ambre_table_header = [
+    {
+      label: 'label',
+      prop: 'label'
+    },
+    {
+      label: 'power',
+      prop: 'power'
+    }
+  ]
+
+  private ambre_table_data = [
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    },
+    {
+      label: 'administer',
+      power: 'manager'
+    }
+  ]
+
+  private ambre_table_handle = [
+    {
+      label: 'edit',
+      prop: 'edit'
+    },
+    {
+      label: 'delete',
+      prop: 'delete',
+      type: 'serious'
+    }
+  ]
 }
 </script>
