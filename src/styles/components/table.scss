@@ -25,5 +25,46 @@
         border-right: 1px solid $--border-default;
       }
     }
+    &-block{
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ambre-table {
+    &-header {
+      &-item {
+        display: none;
+        &:first-child{
+          display: block;
+        }
+      }
+    }
+    &-body {
+      &-item {
+        display: none;
+        padding:10px;
+        &:first-child{
+          display: block;
+          border-right:1px solid $--border-default;
+        }
+      }
+      &-block{
+        padding: 0 10px;
+        overflow: hidden;
+        transition: all .5s;
+        font-size:12px;
+        display: block;
+        background: $--border-default;
+        line-height:30px;
+        .ambre-button{
+          width:100%;
+          height:30px;
+          line-height:20px;
+          box-sizing: border-box;
+          margin-bottom:5px;
+        }
+      }
+    }
   }
 }
