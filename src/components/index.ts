@@ -1,11 +1,4 @@
-import { App } from '@/types/store'
+import utils from '@/utils/index'
 export default {
-  install: (app: App) => {
-    const array = require.context('@/components', false, /.vue$/)
-    array.keys().forEach(item => {
-      let file = array(item)
-      file = file.default || file
-      app.component('ambre-' + item.substring(2, item.lastIndexOf('.')).toLowerCase(), file)
-    })
-  }
+  install: utils.install
 }
