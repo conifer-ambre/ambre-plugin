@@ -775,4 +775,8 @@ input{
     @extend .line-clamp;
     -webkit-line-clamp: 3;
   }
+  &-4 {
+    @extend .line-clamp;
+    -webkit-line-clamp: 4;
+  }
 }
