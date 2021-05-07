@@ -23,6 +23,12 @@
         <ambre-button type="warning" disabled>Button</ambre-button>
         <ambre-button type="serious" disabled>Button</ambre-button>
       </div>
+      <!-- ambre-table -->
+      <h5>表格:</h5>
+      <h5>ambre-table:</h5>
+      <div class="index-component">
+        <ambre-table :data="ambre_table_data" :header="ambre_table_header" :handle="ambre_table_handle"></ambre-table>
+      </div>
     </div>
   </div>
 </template>
@@ -30,6 +36,46 @@
 <script lang="ts">
 import { Vue } from 'vue-class-component'
 export default class Index extends Vue {
-  private list = []
+  private ambre_table_header = [
+    {
+      label: '标签',
+      prop: 'label'
+    },
+    {
+      label: '权力',
+      prop: 'power'
+    }
+  ]
+
+  private ambre_table_data = [
+    {
+      label: '用户1',
+      power: '管理员'
+    },
+    {
+      label: '用户2',
+      power: '管理员'
+    },
+    {
+      label: '用户3',
+      power: '管理员'
+    },
+    {
+      label: '用户4',
+      power: '管理员'
+    }
+  ]
+
+  private ambre_table_handle = [
+    {
+      label: '编辑',
+      prop: 'edit'
+    },
+    {
+      label: '删除',
+      prop: 'delete',
+      type: 'serious'
+    }
+  ]
 }
 </script>
