@@ -10,6 +10,10 @@
     &:hover {
       background: $--button-default-activated;
     }
+    &:active {
+      background: $--button-default-activated;
+      filter:brightness(.6);
+    }
   }
   // primary
   &-primary {
@@ -20,7 +24,7 @@
     }
     &:active {
       background: $--button-primary-activated;
-      filter:brightness(.6)
+      filter:brightness(.6);
     }
   }
   // success
@@ -30,6 +34,10 @@
     &:hover {
       background: $--button-success-activated;
     }
+    &:active {
+      background: $--button-success-activated;
+      filter:brightness(.6);
+    }
   }
   // warning
   &-warning {
@@ -38,6 +46,10 @@
     &:hover {
       background: $--button-warning-activated;
     }
+    &:active {
+      background: $--button-warning-activated;
+      filter:brightness(.6);
+    }
   }
   // serious
   &-serious {
@@ -45,6 +57,10 @@
     background: $--button-serious;
     &:hover {
       background: $--button-serious-activated;
+    }
+    &:active {
+      background: $--button-serious-activated;
+      filter:brightness(.6);
     }
   }
   // disabled
