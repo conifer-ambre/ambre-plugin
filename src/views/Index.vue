@@ -27,7 +27,11 @@
       <h5>表格:</h5>
       <h5>ambre-table:</h5>
       <div class="index-component">
-        <ambre-table :data="ambre_table_data" :header="ambre_table_header" :handle="ambre_table_handle"></ambre-table>
+        <ambre-table
+          :data="ambre_table_data"
+          :header="ambre_table_header"
+          :handle="ambre_table_handle"
+        ></ambre-table>
       </div>
     </div>
   </div>
@@ -77,5 +81,13 @@ export default class Index extends Vue {
       type: 'serious'
     }
   ]
+
+  mounted() {
+    this.handleInit()
+  }
+
+  handleInit() {
+    // console.log(this.$utils.format(1619518245000))
+  }
 }
 </script>
