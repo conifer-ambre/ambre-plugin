@@ -73,9 +73,9 @@ export default {
           use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
         },
         {
-          test: /\.(png|jpe?g|gif)$/i,
+          test: /\.(png|jpe?g|gif|woff|ttf|otf|eot|svg|mp4|xlsx)$/i,
           loader: 'file-loader',
-          options: { name: 'image/[name].[ext]' }
+          options: { name: 'image/[name].[ext]', esModule: false }
         }
       ]
     },
