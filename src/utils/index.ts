@@ -34,7 +34,7 @@ export default {
   output: (path: string) => ({
     filename: 'index.js',
     path,
-    publicPath: ''
+    publicPath: '/'
   }),
   ethereum: async () => {
     const ethereum = window.ethereum
