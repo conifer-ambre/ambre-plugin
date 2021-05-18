@@ -44,8 +44,10 @@ export default {
     if (ethereum) {
       // console.log('MetaMask is installed!')
       // console.log(ethereum.isMetaMask)
-      const [accounts] = await ethereum.request({ method: 'eth_requestAccounts' })
-      return accounts
+      // const [accounts] = await ethereum.request({ method: 'eth_requestAccounts' })
+      return ethereum
+    } else {
+      return ethereum
     }
   },
 
@@ -110,7 +112,7 @@ export default {
           use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
         },
         {
-          test: /\.(png|jpe?g|gif|woff|ttf|otf|eot|svg|mp4|xlsx)$/i,
+          test: /\.(png|jpe?g|gif|woff|woff2|ttf|otf|eot|svg|mp4|xlsx)$/i,
           loader: 'file-loader',
           options: { name: 'image/[name].[ext]', esModule: false }
         }
