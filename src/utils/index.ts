@@ -7,6 +7,9 @@ export default {
       app.component('ambre-' + item.substring(2, item.lastIndexOf('.')).toLowerCase(), file)
     })
   },
+  image(url: string) {
+    return process.env.VUE_APP_IMG + url
+  },
   // format(timestamp: number, format: string = 'yyyy-MM-dd hh:mm:ss') {
   //   console.log(timestamp, format)
   //   const date = new Date(timestamp)
