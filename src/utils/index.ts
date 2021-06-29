@@ -1,4 +1,5 @@
 import { App, Context } from '@/types/store'
+const os = require('os')
 export default {
   install(app: App, context: Context) {
     context.keys().forEach((item: string) => {
@@ -42,9 +43,6 @@ export default {
   ethereum: async () => {
     const ethereum = window.ethereum
     if (ethereum) {
-      // console.log('MetaMask is installed!')
-      // console.log(ethereum.isMetaMask)
-      // const [accounts] = await ethereum.request({ method: 'eth_requestAccounts' })
       return ethereum
     } else {
       return ethereum
@@ -67,8 +65,8 @@ export default {
   message: () => ({
     compilationSuccessInfo: {
       messages: [
-        `AMBRE-VUE-CLI-NEXT running at http://localhost:8080
-    AMBRE-VUE-CLI-NEXT running at http://localhost:8080`
+        `AMBRE-VUE-CLI-NEXT running at http://localhost:3316
+    AMBRE-VUE-CLI-NEXT running at http://localhost:3316`
       ],
       notes: [
         `          ___           ___           ___           ___           ___     
@@ -93,6 +91,7 @@ export default {
     mode: 'development',
     entry: './index.ts',
     devtool: 'inline-source-map',
+    cache: true,
     stats: {
       assets: false,
       moduleAssets: false,
@@ -123,7 +122,7 @@ export default {
       quiet: true,
       stats: 'errors-only',
       compress: true,
-      port: 8080
+      port: 3316
     }
   }
 }
