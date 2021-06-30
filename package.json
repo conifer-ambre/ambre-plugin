@@ -7,10 +7,11 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "ambre-plugin-publish": "cd ./src/package && yarn publish",
-    "ambre-plugin-build": "yarn ambre-plugin-build-components && yarn ambre-plugin-build-styles && yarn ambre-plugin-build-utils",
+    "ambre-plugin-build": "yarn ambre-plugin-build-components && yarn ambre-plugin-build-styles && yarn ambre-plugin-build-utils && yarn ambre-plugin-build-loader",
     "ambre-plugin-build-utils": "vue-cli-service build --target lib ./src/utils/index.ts --dest ./src/package/dist/utils",
     "ambre-plugin-build-styles": "vue-cli-service build --target lib ./src/styles/atom.scss --dest ./src/package/dist/styles/atom && vue-cli-service build --target lib ./src/styles/components.scss --dest ./src/package/dist/styles/components",
-    "ambre-plugin-build-components": "vue-cli-service build --target lib ./src/components/index.ts --dest ./src/package/dist/components"
+    "ambre-plugin-build-components": "vue-cli-service build --target lib ./src/components/index.ts --dest ./src/package/dist/components",
+    "ambre-plugin-build-loader": "vue-cli-service build --target lib ./src/loader/index.ts --dest ./src/package/dist/loader"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -30,12 +31,14 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-standard": "^5.1.2",
     "@vue/eslint-config-typescript": "^5.0.2",
+    "copy-webpack-plugin": "^9.0.1",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0-0",
+    "loader-utils": "^2.0.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3"
