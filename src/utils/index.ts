@@ -1,5 +1,4 @@
 import { App, Context } from '@/types/store'
-const os = require('os')
 export default {
   install(app: App, context: Context) {
     context.keys().forEach((item: string) => {
