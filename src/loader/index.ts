@@ -1,4 +1,6 @@
-export default (source: string, compiler_sfc: any) => {
+export default function (source: string) {
+  // @ts-ignore：
+  const {compiler_sfc} = this.getOptions()
   const { descriptor } = compiler_sfc.parse(source)
   const {
     template: {
