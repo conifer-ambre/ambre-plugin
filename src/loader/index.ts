@@ -1,7 +1,7 @@
 export default function (source: string) {
   // @ts-ignore：
-  const {compiler_sfc} = this.getOptions()
-  const { descriptor } = compiler_sfc.parse(source)
+  const {compiler} = this.getOptions()
+  const { descriptor } = compiler.parse(source)
   const {
     template: {
       ast: { children }

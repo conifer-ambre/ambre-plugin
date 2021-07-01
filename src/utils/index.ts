@@ -10,30 +10,6 @@ export default {
   image(url: string) {
     return process.env.VUE_APP_IMG + url
   },
-  // format(timestamp: number, format: string = 'yyyy-MM-dd hh:mm:ss') {
-  //   console.log(timestamp, format)
-  //   const date = new Date(timestamp)
-  //   if (/(y+)/.test(format)) {
-  //     format = format.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length))
-  //   }
-  //   const object = {
-  //     'M+': date.getMonth() + 1,
-  //     'd+': date.getDate(),
-  //     'h+': date.getHours(),
-  //     'm+': date.getMinutes(),
-  //     's+': date.getSeconds()
-  //   }
-  //   for (const key in object) {
-  //     if (new RegExp(`(${key})`).test(format)) {
-  //       const string = JSON.stringify(object[key]) + ''
-  //       format = format.replace(
-  //         RegExp.$1,
-  //         RegExp.$1.length === 1 ? string : ('00' + string).substr(string.length)
-  //       )
-  //     }
-  //   }
-  //   return format
-  // },
   output: (path: string) => ({
     filename: 'index.js',
     path,
@@ -86,7 +62,7 @@ export default {
     extensions: ['.js', '.ts', '.vue', '.json', '.scss', '.css'],
     alias: { '@': path }
   }),
-  options: {
+  options: (compiler: unknown) => ({
     mode: 'development',
     entry: './index.ts',
     devtool: 'inline-source-map',
@@ -113,6 +89,18 @@ export default {
           test: /\.(png|jpe?g|gif|woff|woff2|ttf|otf|eot|svg|mp4|xlsx)$/i,
           loader: 'file-loader',
           options: { name: 'image/[name].[ext]', esModule: false }
+        },
+        {
+          test: /\.(vue)$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'ambre-plugin/dist/loader/ambre-plugin.umd.js',
+              options: {
+                compiler
+              }
+            }
+          ]
         }
       ]
     },
@@ -123,5 +111,5 @@ export default {
       compress: true,
       port: 3316
     }
-  }
+  })
 }
