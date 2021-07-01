@@ -66,6 +66,7 @@ node_modules/
 miniprogram_npm/
 npm-debug.log
 yarn-error.log
+yarn.lock
 
 # buck
 buck-out/

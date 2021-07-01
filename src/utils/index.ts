@@ -24,8 +24,8 @@ export default {
     }
   },
 
-  html: () => ({
-    title: 'ambre-vue-cli-next',
+  html: (extra: { title: string }) => ({
+    title: extra.title,
     filename: 'index.html',
     template: './public/index.html'
   }),
@@ -37,14 +37,18 @@ export default {
     __VUE_OPTIONS_API__: true,
     __VUE_PROD_DEVTOOLS__: false
   }),
-  message: () => ({
-    compilationSuccessInfo: {
-      messages: [
-        `AMBRE-VUE-CLI-NEXT running at http://localhost:3316
-    AMBRE-VUE-CLI-NEXT running at http://localhost:3316`
-      ],
-      notes: [
-        `          ___           ___           ___           ___           ___     
+  message: (network: { WLAN: Array<any> }) => {
+    const array: {
+      address: string
+    }[] = network.WLAN.filter((element: { family: string }) => element.family === 'IPv4')
+    return {
+      compilationSuccessInfo: {
+        messages: [
+          `AMBRE-VUE-CLI-NEXT running at http://127.0.0.1:3316
+    AMBRE-VUE-CLI-NEXT running at http://${array[0].address}:3316`
+        ],
+        notes: [
+          `          ___           ___           ___           ___           ___     
              /\\  \\         /\\__\\         /\\  \\         /\\  \\         /\\  \\    
             /::\\  \\       /::|  |       /::\\  \\       /::\\  \\       /::\\  \\   
            /:/\\:\\  \\     /:|:|  |      /:/\\:\\  \\     /:/\\:\\  \\     /:/\\:\\  \\  
@@ -55,9 +59,10 @@ export default {
               /:/  /        /:/  /     \\:\\/:/  /      |:|\\/__/     \\:\\ \\/__/  
              /:/  /        /:/  /       \\::/__/       |:|  |        \\:\\__\\    
              \\/__/         \\/__/         \\/__/         \\|__|         \\/__/    `
-      ]
+        ]
+      }
     }
-  }),
+  },
   resolve: (path: string) => ({
     extensions: ['.js', '.ts', '.vue', '.json', '.scss', '.css'],
     alias: { '@': path }
@@ -105,7 +110,7 @@ export default {
       ]
     },
     devServer: {
-      // host: '0.0.0.0',
+      host: '0.0.0.0',
       quiet: true,
       stats: 'errors-only',
       compress: true,
