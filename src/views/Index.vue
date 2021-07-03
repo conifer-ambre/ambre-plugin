@@ -23,15 +23,27 @@
         <ambre-button type="warning" disabled>Button</ambre-button>
         <ambre-button type="serious" disabled>Button</ambre-button>
       </div>
-      <!-- ambre-table -->
-      <h5>表格:</h5>
-      <h5>ambre-table:</h5>
+      <!-- ambre-element-table -->
+      <h5>Element 表格:</h5>
+      <h5>ambre-element-hunt:</h5>
       <div class="index-component">
-        <ambre-table
+        <ambre-element-hunt
+          :options="ambre_hunt_options"
+          :emits="ambre_hunt_emits"
+          @search="handleSearch"
+        />
+      </div>
+      <h5>ambre-element-table:</h5>
+      <div class="index-component">
+        <ambre-element-table
           :data="ambre_table_data"
-          :header="ambre_table_header"
-          :handle="ambre_table_handle"
-        ></ambre-table>
+          :options="ambre_table_options"
+          :emits="ambre_table_emits"
+        />
+      </div>
+      <h5>ambre-element-page:</h5>
+      <div class="index-component">
+        <ambre-element-page :total="ambre_page_total" />
       </div>
     </div>
   </div>
@@ -40,14 +52,62 @@
 <script lang="ts">
 import { Vue } from 'vue-class-component'
 export default class Index extends Vue {
-  private ambre_table_header = [
+  private ambre_hunt_options = [
     {
-      label: '标签',
-      prop: 'label'
+      label: '输入框',
+      prop: 'input',
+      placeholder: '请输入'
     },
     {
-      label: '权力',
-      prop: 'power'
+      label: '下拉框单选',
+      prop: 'select_single',
+      type: 'select',
+      placeholder: '请选择',
+      options: [
+        {
+          label: '选项一',
+          value: 1
+        },
+        {
+          label: '选项二',
+          value: 2
+        }
+      ]
+    },
+    {
+      label: '下拉框多选',
+      prop: 'select_multiple',
+      type: 'select',
+      placeholder: '请选择',
+      multiple: true,
+      options: [
+        {
+          label: '选项一',
+          value: 1
+        },
+        {
+          label: '选项二',
+          value: 2
+        }
+      ]
+    },
+    {
+      label: '日期',
+      prop: 'date',
+      type: 'date',
+      placeholder: '请选择日期'
+    },
+    {
+      label: '日期时间',
+      prop: 'datetime',
+      type: 'datetime',
+      placeholder: '请选择日期时间'
+    },
+    {
+      label: '日期时间范围',
+      prop: 'datetimerange',
+      type: 'datetimerange',
+      placeholder: '请选择日期时间范围'
     }
   ]
 
@@ -67,18 +127,6 @@ export default class Index extends Vue {
     {
       label: '用户4',
       power: '管理员'
-    }
-  ]
-
-  private ambre_table_handle = [
-    {
-      label: '编辑',
-      prop: 'edit'
-    },
-    {
-      label: '删除',
-      prop: 'delete',
-      type: 'serious'
     }
   ]
 
