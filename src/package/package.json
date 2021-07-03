@@ -1,6 +1,6 @@
 {
   "name": "ambre-plugin",
-  "version": "0.0.52",
+  "version": "0.0.53",
   "main": "dist/components/ambre-plugin.umd.min.js",
   "license": "MIT"
 }
