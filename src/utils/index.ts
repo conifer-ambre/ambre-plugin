@@ -33,10 +33,13 @@ export default {
     name: 'AMBRE-VUE-CLI-NEXT',
     color: '#426AB3'
   }),
-  define: () => ({
-    __VUE_OPTIONS_API__: true,
-    __VUE_PROD_DEVTOOLS__: false
-  }),
+  define: (env: object) => {
+    return {
+      __VUE_OPTIONS_API__: true,
+      __VUE_PROD_DEVTOOLS__: false,
+      'process.env': env
+    }
+  },
   message: (network: { WLAN: Array<any> }) => {
     const array: {
       address: string
