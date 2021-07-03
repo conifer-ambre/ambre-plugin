@@ -4,7 +4,13 @@ export default {
     context.keys().forEach((item: string) => {
       let file = context(item)
       file = file.default || file
-      app.component('ambre-' + item.substring(2, item.lastIndexOf('.')).toLowerCase(), file)
+      app.component(
+        'ambre' +
+          item
+            .substring(2, item.lastIndexOf('.'))
+            .replace(/([A-Z])/g, word => '-' + word.toLowerCase()),
+        file
+      )
     })
   },
   image(url: string) {
@@ -40,6 +46,7 @@ export default {
       'process.env': env
     }
   },
+  // @ts-ignore：
   message: (network: { WLAN: Array<any> }) => {
     const array: {
       address: string
