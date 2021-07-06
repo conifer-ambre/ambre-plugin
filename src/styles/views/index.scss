@@ -1,16 +1,2 @@
-.index{
-  padding:20px;
-  &-card{
-    padding:10px 0;
-  }
-  &-component{
-    padding:10px 0;
-    >*{
-      margin-right:10px;
-      margin-bottom:10px;
-      &:last-child{
-        margin-right:0;
-      }
-    }
-  }
+.index {
 }

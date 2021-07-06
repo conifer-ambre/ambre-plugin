@@ -2,47 +2,45 @@
   <div class="index">
     <h3>组件库</h3>
     <h3>components</h3>
-    <div class="index-card">
+    <div>
       <!-- ambre-button -->
-      <h5>按钮:</h5>
-      <h5>ambre-button:</h5>
-      <div class="index-component">
+      <h5 class="padding-top-20">按钮:</h5>
+      <h5 class="padding-bottom-20">ambre-button:</h5>
+      <div class="padding-bottom-20">
         <ambre-button type="default">Button</ambre-button>
         <ambre-button type="primary">Button</ambre-button>
         <ambre-button type="success">Button</ambre-button>
         <ambre-button type="warning">Button</ambre-button>
         <ambre-button type="serious">Button</ambre-button>
       </div>
+
       <!-- ambre-button disabled -->
-      <h5>按钮 禁用状态:</h5>
-      <h5>ambre-button disabled:</h5>
-      <div class="index-component">
+      <h5 class="padding-top-20">按钮 禁用状态:</h5>
+      <h5 class="padding-bottom-20">ambre-button disabled:</h5>
+      <div class="padding-bottom-20">
         <ambre-button type="default" disabled>Button</ambre-button>
         <ambre-button type="primary" disabled>Button</ambre-button>
         <ambre-button type="success" disabled>Button</ambre-button>
         <ambre-button type="warning" disabled>Button</ambre-button>
         <ambre-button type="serious" disabled>Button</ambre-button>
       </div>
+
       <!-- ambre-element-table -->
-      <h5>Element 表格:</h5>
-      <h5>ambre-element-hunt:</h5>
-      <div class="index-component">
+      <h5 class="padding-top-20">Element 表格:</h5>
+      <h5 class="padding-bottom-20">
+        ambre-element-hunt + ambre-element-table + ambre-element-page:
+      </h5>
+      <div class="padding-bottom-20">
         <ambre-element-hunt
           :options="ambre_hunt_options"
           :emits="ambre_hunt_emits"
           @search="handleSearch"
         />
-      </div>
-      <h5>ambre-element-table:</h5>
-      <div class="index-component">
         <ambre-element-table
           :data="ambre_table_data"
           :options="ambre_table_options"
           :emits="ambre_table_emits"
         />
-      </div>
-      <h5>ambre-element-page:</h5>
-      <div class="index-component">
         <ambre-element-page :total="ambre_page_total" />
       </div>
     </div>
