@@ -47,10 +47,10 @@ export default {
     }
   },
   // @ts-ignore：
-  message: (network: { WLAN: Array<any> }) => {
+  message: (network: any) => {
     const array: {
       address: string
-    }[] = network.WLAN.filter((element: { family: string }) => element.family === 'IPv4')
+    }[] = network[Object.keys(network)[0]].filter((element: { family: string }) => element.family === 'IPv4')
     return {
       compilationSuccessInfo: {
         messages: [
