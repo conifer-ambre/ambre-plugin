@@ -1,0 +1,8 @@
+.ambre-navigation {
+  padding: $--padding-primary;
+  width: 150px;
+  transition: all 0.5s;
+  &-activated {
+    width: 300px;
+  }
+}

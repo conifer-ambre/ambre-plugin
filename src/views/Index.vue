@@ -30,7 +30,7 @@
       <h5 class="padding-bottom-20">
         ambre-element-hunt + ambre-element-table + ambre-element-page:
       </h5>
-      <div class="padding-bottom-20">
+      <div class="ambre-admin-element-table">
         <ambre-element-hunt
           :options="ambre_hunt_options"
           :emits="ambre_hunt_emits"
