@@ -1,7 +1,7 @@
 <template>
   <div :class="`ambre-navigation ${activated && 'ambre-navigation-activated'}`">
+    <div class="cursor-pointer" @click="handleActivated">Click</div>
     <div>Navigation</div>
-    <div @click="handleActivated">Click</div>
   </div>
 </template>
 

@@ -791,13 +791,14 @@ input {
     height: 100%;
     overflow: auto;
     &-content {
-      height: 100%;
+      padding: $--padding-primary;
+      height: calc(100% - #{$--padding-primary * 2});
       overflow: auto;
     }
   }
   &-element {
     &-table {
-      padding: 20px;
+      padding: $--padding-primary;
       border: 1px solid $--border-default;
       box-sizing: border-box;
     }
